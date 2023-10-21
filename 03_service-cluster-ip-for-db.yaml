@@ -4,8 +4,9 @@ metadata:
   name: vprodb # app calls this domain in application.properties
 spec:
   selector:
-    app: vprodb # label of db pod
+    app: vprodb # label of pod
   ports:
   - port: 3306
     targetPort: vprodb-port
     protocol: TCP
+  type: ClusterIP
