@@ -18,6 +18,9 @@ spec:
         - name: vprodb
           image: tria/vprofiledb
           resources:
+            requests:
+              memory: "500Mi"
+              cpu: "0.5"
             limits:
               memory: "1Gi"
               cpu: "0.7"
